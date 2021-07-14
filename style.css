@@ -1,0 +1,307 @@
+/* google fonts uses  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+/* common style  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+/* header section style  */
+.container{
+    display: flex;
+    justify-content: center;
+}
+header{
+    background-color: #2D25A0;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+
+}
+
+.nav-items{
+    display: flex;
+    width: 1200px;
+    padding: 40px 0 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-item ul li{
+    display: inline-block;
+    /* list-style: none; */
+    margin-right: 36px;
+}
+
+.nav-item ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+.nav-item ul li a:hover{
+    color: #E02C6D;
+}
+
+.nav-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 123px;
+    height: 44px;
+    background-color: #E02C6D;
+    transition: width 1s ;
+}
+
+.nav-login:hover{
+    background-color: #e61c37;
+    width: 150px;
+    border-radius: 10px;
+}
+.nav-login a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+.fixed{
+    margin: 5px;
+}
+/*--------------------------------------Hero section style-------------------------------------- */
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    margin: 50px 0 80px 0;
+}
+
+.title-text {
+    color: #FFFFFF;
+    font-size: 64px;
+}
+
+.btn{
+    width: 168px;
+    height: 44px;
+    margin-top: 30px;
+    background-color: #E02C6D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: width 1s;
+}
+
+.btn:hover{
+    width: 180px;
+    background-color: #e61c37;
+    border-radius: 10px;
+}
+
+.btn a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 16px;
+    padding: 10 0;
+}
+
+.hero-image img{
+    width: 556px;
+    height: 456px;
+}
+/*--------------------------------------End of Header section -------------------------------------- */
+/* ----------------------------- animation part start----------------------------- */
+.animation{
+    animation-name:bounce;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(50px);
+     
+}
+    100%{
+        transform: translateX(0);
+       
+}
+}
+
+/* --------------------------- animation part end --------------------------- */
+/* --------------------------------------main section style ------------------------------------------*/
+
+/* --------------------------------------players Card section style ------------------------------------------*/
+
+
+.all-players{
+    margin: 90px 0 40px;
+}
+
+.players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 30px ;
+}
+
+
+.player-card{
+    width: 330px;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+}
+
+.player-card:hover .player-info img{
+    transform: scale(1.05);
+}
+
+.player-info{
+    padding: 15px;
+}
+
+.player-info img{
+    width: 300px;
+    height: 256px;
+    transition: transform 1s;
+}
+
+.player-info h3{
+    font-size: 24px;
+}
+
+.player-info p{
+    margin-top: 5px;
+}
+a.read-more {
+    text-decoration: none;
+    background-color: #2D25A0;
+    color: #fff;
+    padding: 3px 5px;
+    border-radius: 3px;
+    display: inline-block;
+    margin-top: 9px;
+    font-size: 12px;
+}
+
+/* --------------------------------------End of players Card section style ------------------------------------------*/
+
+
+/* --------------------------------------Blog area section style ------------------------------------------*/
+
+.blog-area{
+    display: flex;
+    width: 1200px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 90px 0 120px 0;
+}
+
+.title-text2 {
+    color: #0A0826;
+    font-size: 48px;
+}
+
+.blog-thumbnil img{
+    width: 567px;
+    height: 427px;
+}
+
+/* --------------------------------------End of Blog area section style ------------------------------------------*/
+ /* trending-part start */
+ .trending-visitor-part{
+    display: flex;
+    justify-content: center;
+}
+.trending-visitor-container{
+    width: 1050px;
+}
+/* this style also use visitor section  */
+.trending-visitor-container h2 {
+    font-size: 30px;
+    color: #10171D;
+    margin-top: 0px;
+    padding: 0px 0px 15px;
+    border-bottom: 2px solid #dfdfdf;
+    margin-bottom: 23px;
+}
+.trending-item{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    margin-bottom: 100px;
+}
+.trending{
+    padding: 15px 15px 35px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+.trending img{
+    width: 100%;
+    border-radius: 15px;
+}
+.trending > p{
+    font-size: 16px;
+    color: #6c6c6c;
+}
+/* trending part end  */
+
+/* --------------------------------- footer --------------------------------- */
+
+footer{
+    margin-top: 9.875rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.footer-section{
+    width: 30.241875rem;
+    height: 13.3125rem;
+}
+.footer-section img{
+    width: 30.241875rem;
+    height:6.875rem;
+}
+.social-icons{
+    padding: 1.25rem 0;
+}
+.social-icons a{
+    color:#969BAB;
+    font-size: 1.375rem;
+    padding: 0.625rem 0.3125rem;
+    
+}
+.social-icons a .fa-facebook:hover{
+    color:#4169e1;
+    transition: all .3s;
+
+}
+.social-icons a .fa-instagram-square:hover{
+    color:#c71585;
+    transition: all .3s;
+}
+.social-icons a .fa-youtube:hover{
+    color:#ff0000;
+    transition: all .3s;
+}
+.social-icons a .fa-linkedin:hover{
+    color:#153cb3;
+    transition: all .3s;
+}
+.footer-section p{
+    font-size: 1.125rem;
+}
+
+/* --------------------------- footer section end --------------------------- */
