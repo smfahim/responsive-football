@@ -256,7 +256,41 @@ a.read-more {
     color: #6c6c6c;
 }
 /* trending part end  */
-
+/*----------------------
+Popular Highlights Style Starts
+---------------------- */
+.highlights-title {
+    margin-bottom: 54px;
+    line-height: 2.7em;
+}
+.highlights{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 25px;
+    margin-bottom: 120px;
+}
+.match{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.match h4{
+    width: 347.4px;
+    margin-bottom: 5px;
+}
+a.load-more {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: #2D25A0;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 50px;
+}
+/*----------------------
+Popular Highlights Style Ends
+---------------------- */
 /* --------------------------------- footer --------------------------------- */
 
 footer{
@@ -305,3 +339,100 @@ footer{
 }
 
 /* --------------------------- footer section end --------------------------- */
+/* Media Query For Phone Device */
+
+@media only screen and (max-width: 688px){
+   html,body{
+       width: 100%;
+       height: 100%;
+       padding: 0;
+       margin: 0;
+       overflow-x: hidden;
+   }
+    .navbar{
+       display: none;
+   }
+   .container{
+       width: 100%;
+       grid-template-columns: repeat(1, 1fr);
+   }
+   .hero, .players{
+    flex-direction: column;
+   }
+   .hero-image img{
+    margin-top: 50px;
+    width: 329px;
+    height: 259.17px; 
+   }
+   .players{
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+   }
+   .player-card{
+    flex-direction: column;
+   }
+   .blog-info, .trending-item, .highlights{
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+   }
+   .blog-area, .trending-visitor-part, .match, .highlights-title{
+    flex-direction: column;
+   }
+   .blog-thumbnil img{
+    margin-top: 50px;
+    width: 329px;
+    height: 259.17px; 
+   }
+   .trending img{
+    margin-top: 50px;
+    width: 329px;
+    height: 259.17px; 
+   }
+   .footer-section img{
+       width: 290px;
+       height: 130px;
+   }
+
+}
+/* tablet devices  */
+@media only screen and (min-width:688px) and (max-width:992px){
+    html,body{
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        overflow-x: hidden;
+    }
+    .container{
+        width: 100%;
+    }
+    .hero-image img{
+        width: 416px;
+        height: 316px;
+    }
+    .players{
+        flex-direction: column;
+    }
+    .players{
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+       }
+       .player-card{
+        flex-direction: column;
+       }
+       .blog-info, .trending-item, .highlights{
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+       }
+       .blog-area, .trending-visitor-part, .match, .highlights-title{
+        flex-direction: column;
+       }
+       .trending-visitor-part{
+        flex-direction: column;
+       }
+       .trending-item{
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr); 
+       }
+
+}
